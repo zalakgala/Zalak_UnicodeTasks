@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management App</title>
+  <link rel="stylesheet" href="Task1.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Student Management</h1>
+
+    <div class="form-box">
+      <button id="addstu">
+        <h3>Add New Student</h3>
+      </button>
+      <form id="addStd" class="hidden">
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="text" id="college" placeholder="College" required>
+        <input type="text" id="cgpa" placeholder="CGPA" required>
+        <input type="text" id="phone" placeholder="Phone" required>
+        <input type="text" id="sapid" placeholder="SAP ID" required>
+        <input type="text" id="batch" placeholder="Batch" required>
+        <input type="text" id="year" placeholder="Year" required>
+        <input type="text" id="address" placeholder="Address" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Student List</h3>
+      <div id="studentsContainer"></div>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Sr No.</th>
+            <th>Name</th>
+            <th>College</th>
+            <th>CGPA</th>
+            <th>Phone</th>
+            <th>SAP ID</th>
+            <th>Batch</th>
+            <th>Year</th>
+            <th>Address</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="studinfo"></tbody>
+      </table>
+    </div>
+    <form id="editForm" class="hidden">
+      <input type="text" id="editSapid" readonly>
+      <input type="text" id="editName" placeholder="Student Name" required>
+      <input type="text" id="editCollege" placeholder="College" required>
+      <input type="text" id="editCgpa" placeholder="CGPA" required>
+      <input type="text" id="editPhone" placeholder="Phone" required>
+      <input type="text" id="editBatch" placeholder="Batch" required>
+      <input type="text" id="editYear" placeholder="Year" required>
+      <input type="text" id="editAddress" placeholder="Address" required>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+
+  <script src="Task1.js"></script>
+  </script>
+</body>
+
+</html>
